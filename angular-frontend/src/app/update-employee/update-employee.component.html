@@ -1,0 +1,41 @@
+
+<div class="col-md-5 offset-md-3">
+    <h3> Update Employee</h3>
+    <form (ngSubmit)= "onSubmit()">
+        
+    
+        <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class="form-control" id="firstName"
+                [(ngModel)] = "employee.firstName" name ="firstName">
+        </div>
+    
+    
+        <div class="form-group">
+        <label> LastName</label>
+        <input type="text" class="form-control" id="lastName"
+                [(ngModel)] = "employee.lastName" name ="lastName">
+        
+        </div>
+    
+        <div class="form-group">
+            <label> Email Id</label>
+                <input type="text" class="form-control" id="emailId"
+                    [(ngModel)] = "employee.emailId" name ="emailId">
+            
+        </div>
+    
+        <button class= "btn btn-success" type= "submit">Submit </button>
+    
+
+             
+        
+    <!--  Modal footer  
+    <div class="modal-footer" >  
+        <button type="submit" class="btn btn-success" [hidden]="isupdated">Update</button>  
+        <button type="button" class="btn btn-close" data-dismiss="modal" (click)="changeisUpdate()">Close</button>  
+        <button type="button" class="btn-close" aria-label="Close"></button> 
+    </div>  -->
+
+    </form>
+    </div>
